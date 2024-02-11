@@ -5,7 +5,7 @@ Pequeno website feito com a API pública PoetryDB.
 
 Esse é um trabalho em andamento. Há alguns ajustes a serem feitos a interface do usuário. Eu vou desenvolver uma versão em React para o frontend e uma versão móvel também.
 
-Para rodar, você precisa instalar as dependências descritas em requirements.txt. O bacakend é feito com o framework Flask e API PoetryDB é utilizada.
+Para rodar, você precisa instalar as dependências descritas em requirements.txt. O backend é feito com o framework Flask e API PoetryDB é utilizada.
 
 English:
 
