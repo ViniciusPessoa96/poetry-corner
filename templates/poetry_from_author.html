@@ -1,0 +1,31 @@
+{% extends 'template.html' %}
+
+{% block conteudo %}
+
+<main>
+    <div class='content_display'>
+        <div class="content_display_inner">
+
+            <h2 id='author_name_header' data-authorname="{{ author_name }}" >{{ author_name }}</h2>
+
+            <br>
+        </div>
+    </div>
+</main>
+
+<script type='text/javascript'>
+    fetch(`http://localhost:5002/get_poetry_from/Emily%20Dickinson`)
+    .then(res => {
+        res = res.json()
+        res.then(data => {
+            console.log(data)
+
+        })
+    }).catch((e) => {
+        console.log(e)
+    })
+</script>
+
+<script type='module' src="{{ url_for('static', filename='js/poetry_from_author2.mjs')}}"></script>
+
+{% endblock %}
